@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "Imparcel",
+  "description": "Track packages with ease",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ],
+  "content_scripts": [{
+    "matches": ["*://*/*"],
+    "js": ["jquery.min.js", "script.js"],
+    "run_at": "document_end"
+  }]
+}
